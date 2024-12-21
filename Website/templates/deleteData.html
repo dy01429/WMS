@@ -1,0 +1,21 @@
+{%extends 'base.html'%}
+{%block content%}
+    <h1>{%block title %} Delete Data{%endblock%}</h1>
+
+
+<body id="interface">
+    <div class="Button_Selection">
+        <button type="button" id= 'Clients'> Delete Clients</button> 
+        <button type="button" id= 'Inventory'> Delete Inventory</button> 
+        <button type="button" id= 'Pallets'> Delete Pallets</button> 
+        <button type="button" id= 'Boxes'> Delete Boxes</button> 
+        <button type="button" id= 'Movement'> Delete Pallet Movements</button> <br>
+    </div>
+    <div id='searchInterface'></div>
+    <div id='results'></div>
+    
+
+</body>
+
+<script defer src={{ url_for('static',filename='js/deleteData.js') }}></script>
+{%endblock%}

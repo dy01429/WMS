@@ -1,0 +1,24 @@
+{%extends 'base.html'%}
+{%block content%}
+    <h1>{%block title %} View Data{%endblock%}</h1>
+
+    
+    <body id="interface">
+        <div class="Button_Selection">
+            <button type="button" id= 'Clients'> View Clients</button> 
+            <button type="button" id= 'Inventory'> View Inventory</button> 
+            <button type="button" id= 'Pallets'> View Pallets</button> 
+            <button type="button" id= 'Boxes'> View Boxes</button> 
+            <button type="button" id= 'Movement'> View Pallet Movements</button> 
+            <button type="button" id= 'Barcodes'> View Barcode Data</button> 
+            <button type="button" id= 'Stacking'> View Stacking Data </button><br>
+        </div>
+    <div id='searchInterface'></div>
+        
+    <div id="results"></div>
+    </body>
+    
+    
+    <script defer src={{ url_for('static',filename='js/viewData.js') }}></script>
+{%endblock%}
+

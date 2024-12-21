@@ -1,0 +1,18 @@
+{%extends 'base.html'%}
+{%block content%}
+    <h1>{%block title %}Scan Barcode{%endblock%}</h1>
+
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8  offset-lg-2">
+                </div>
+                <button id="startDylan">Start</button>
+            </div>
+        </div>
+    </body>
+    
+    <script defer src={{ url_for('static',filename='js/scanner.js') }}></script>
+
+
+    {%endblock%}

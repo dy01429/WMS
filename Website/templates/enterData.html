@@ -1,0 +1,21 @@
+{%extends 'base.html'%}
+{%block content%}
+    <h1>{%block title %} Enter Data{%endblock%}</h1>
+
+    
+    <body id="interface">
+        <div class="Button_Selection">
+            <button type="button" id= 'Clients'> New Clients</button> 
+            <button type="button" id= 'Inventory'> New Inventory</button> 
+            <button type="button" id= 'Pallets'> New Pallets</button> 
+            <button type="button" id= 'Boxes'> New Boxes</button> 
+            <button type="button" id= 'Movement'> New Pallet Movements</button> <br>
+        </div>
+
+        
+   
+    </body>
+    <a id="results"></a>
+    
+    <script defer src={{ url_for('static',filename='js/enterData.js') }}></script>
+{%endblock%}

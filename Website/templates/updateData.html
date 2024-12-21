@@ -1,0 +1,21 @@
+{%extends 'base.html'%}
+{%block content%}
+    <h1>{%block title %} Update Data{%endblock%}</h1>
+
+
+<body id="interface">
+    <div class="Button_Selection">
+        <button type="button" id= 'Clients'> Update Clients</button> 
+        <button type="button" id= 'Inventory'> Update Inventory</button> 
+        <button type="button" id= 'Pallets'> Update Pallets</button> 
+        <button type="button" id= 'Boxes'> Update Boxes</button> 
+        <button type="button" id= 'Movement'> Update Pallet Movements</button> <br>
+    </div>
+    <div id='searchInterface'></div>
+    <div id='results'></div>
+    
+
+</body>
+
+<script defer src={{ url_for('static',filename='js/updateData.js') }}></script>
+{%endblock%}

@@ -1,0 +1,22 @@
+train: C:/Users/dylan/OneDrive/Desktop/Everything/School Work/Fall 2024/Capstone/Test/WMS/train/images
+val: C:/Users/dylan/OneDrive/Desktop/Everything/School Work/Fall 2024/Capstone/Test/WMS/valid/images
+test: C:/Users/dylan/OneDrive/Desktop/Everything/School Work/Fall 2024/Capstone/Test/WMS/test/images
+
+
+nc: 2
+names: ['BoxFace', 'pallet']
+
+roboflow:
+  workspace: cardboard-n0lgk
+  project: cardboard-zfgmi
+  version: 7
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/cardboard-n0lgk/cardboard-zfgmi/dataset/7
+
+
+roboflow:
+  workspace: esprit-moito
+  project: mask_rcnn-73vt5
+  version: 4
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/esprit-moito/mask_rcnn-73vt5/dataset/4
